@@ -50,3 +50,6 @@ docker-compose.override.yml
 
 # Testing
 coverage/
+
+# Others
+hexode_interview_guide.md

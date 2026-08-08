@@ -365,7 +365,7 @@ const IDEHeader = ({
         <button
           onClick={toggleFullscreen}
           className="flex items-center gap-1.5 px-2.5 py-1 rounded border border-transparent bg-transparent text-muted text-xs hover:bg-card hover:text-foreground hover:border-border transition-all"
-          title="Fullscreen (F11)"
+          title={isFullscreen ? "Exit Fullscreen (Esc)" : "Fullscreen (F11)"}
         >
           {isFullscreen ? <Minimize size={14} /> : <Maximize size={14} />}
         </button>

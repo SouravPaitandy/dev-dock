@@ -679,6 +679,11 @@ app.get("/", (req, res) => {
   res.send("DevDock API & Sync Server Running");
 });
 
+// Health check endpoint for uptime monitoring
+app.get("/health", (req, res) => {
+  res.json({ status: "ok", timestamp: Date.now() });
+});
+
 // --- Yjs / Helper Logic ---
 const persistence = new LeveldbPersistence("./storage");
 // docs Map is defined at the top of the file
